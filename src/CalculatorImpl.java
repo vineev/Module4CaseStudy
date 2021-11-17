@@ -15,7 +15,7 @@ public class CalculatorImpl implements Calculator
 	@Override
 	public int Subtraction(int num1, int num2) {
 		// TODO Auto-generated method stub
-		return 0;
+		return num1-num2;
 	}
 
 	@Override
