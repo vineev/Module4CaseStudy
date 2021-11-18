@@ -17,7 +17,7 @@ public class CalculatorMain {
 		num1 = scanner.nextInt();
 		num2 = scanner.nextInt();
 		
-		System.out.println("Enter ur task add,sub :");
+		System.out.println("Enter ur task +,-,*,/ :");
 		task=scanner.next();
 
 
@@ -26,18 +26,32 @@ public class CalculatorMain {
 
 		System.out.println("Enter ur numbers:"+ result);
 
-			if(task=="add")
+			if(task=="+")
 			{
 				
 		result = calc.Addition(num1,num2);
 		System.out.println("Result:"+ result);
 			}
-			else if (task=="sub")
+			else if (task=="-")
 			{
 				result = calc.Subtraction(num1,num2);
 		System.out.println("Result:"+ result);
 				
 			}
+			else if (task=="*")
+			{
+				result = calc.Multiplication(num1,num2);
+		System.out.println("Result:"+ result);
+				
+			}
+			else if(task=="/")
+			{
+				result = calc.Division(num1,num2);
+		System.out.println("Result:"+ result);
+			}
+			else 
+			{		System.out.println("Invalid input");
+}
 	}
 
 }

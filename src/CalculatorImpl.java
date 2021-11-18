@@ -21,13 +21,13 @@ public class CalculatorImpl implements Calculator
 	@Override
 	public int Division(int num1, int num2) {
 		// TODO Auto-generated method stub
-		return 0;
+		return num1/num2;
 	}
 
 	@Override
 	public int Multiplicaton(int num1, int num2) {
 		// TODO Auto-generated method stub
-		return 0;
+		return num1*num2;
 	}
 
 }
